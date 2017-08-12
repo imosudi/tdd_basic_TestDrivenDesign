@@ -1,8 +1,10 @@
 import unittest
 
 class TddLeastGoalPerformer(unittest.Testcase):
-	
 
+	def setUp(self):
+		self.inputFilename = LeastGoalPerformer()
+		pass
 
 
 
