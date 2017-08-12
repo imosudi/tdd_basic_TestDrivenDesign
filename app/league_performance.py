@@ -1,4 +1,4 @@
-import os.path
+
 
 class LeastGoalPerformer(object):
 	filename = 'football-league-results.txt'
