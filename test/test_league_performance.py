@@ -13,6 +13,10 @@ class TddLeastGoalPerformer(unittest.TestCase):
 		self.assertEqual('football-league-results.txt', result)
 		pass
 
+	def test__return_exception_if_file_extension_not_txt(self):
+		self.assertRaises(ValueError, self.inputFilename.confirmFileIntergrity, 'football-league-results')
+		pass
+
 
 
 
