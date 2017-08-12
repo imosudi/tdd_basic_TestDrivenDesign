@@ -19,7 +19,6 @@ def weatherList(filename):
 				dailyLow =  int(line[2])
 			except ValueError:
 				pass
-			#print dayNum, dailyHigh, dailyLow, (dailyHigh - dailyLow)
 			dailyList.append(dayNum), dailyHighList.append(dailyHigh), dailyLowList.append(dailyLow), dailyTempSpread.append(dailyHigh - dailyLow)
 
 	weatherDict = dict(zip(dailyList, dailyTempSpread))
