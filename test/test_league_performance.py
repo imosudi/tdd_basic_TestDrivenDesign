@@ -1,13 +1,13 @@
 import unittest
+from app.league_performance import LeastGoalPerformer #import the class from target python application
 
-
-class TddLeastGoalPerformer(unittest.Testcase):
+class TddLeastGoalPerformer(unittest.TestCase):
 
 	def setUp(self):
 		self.inputFilename = LeastGoalPerformer()
 		pass
 
-	def test__inputFileIntegrity(self):
+	def test__return_inputFileIntegrity(self):
 		inputFilename = LeastGoalPerformer()
 		result = inputFilename.confirmFileIntergrity('football-league-result.txt')
 		self.assertEqual('football-league-result.txt', result)
@@ -18,6 +18,10 @@ class TddLeastGoalPerformer(unittest.Testcase):
 
 
 	"""docstring for TddLeastGoalPerformer"""
-	def __init__(self, arg):
-		super(TddLeastGoalPerformer, self).__init__()
-		self.arg = arg
+	'''def __init__(self, arg):
+					super(TddLeastGoalPerformer, self).__init__()
+					self.arg = arg'''
+
+
+if __name__ == '__main__':
+    unittest.main()
