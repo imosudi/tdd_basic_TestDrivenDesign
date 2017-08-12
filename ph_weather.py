@@ -1,13 +1,13 @@
 filename = 'port-harcourt-weather.txt'
 def weatherList(filename):
 	with open(filename) as phweather:
-		dailyList = []
-		dailyHighList = []
-		dailyLowList = []
-		dailyTempSpread = []
+		dailyList = []		#Mosudi: Initialise list to collate 
+		dailyHighList = []	#Mosudi: Initialise list to collate 
+		dailyLowList = []	#Mosudi: Initialise list to collate 
+		dailyTempSpread = []	#Mosudi: Initialise list to collate 
 		phweather.next() #Mosudi Skipping the first line
 		phweather.next() #Mosudi Skipping the second line#I will later use confirm if list empty
-		for line in phweather: #interating the lines
+		for line in phweather:  #Mosudi: Iterating over  each line
 			line.strip()
 			dayDailyTempSpread = []
 			#print line
