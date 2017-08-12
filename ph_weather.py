@@ -1,10 +1,10 @@
 filename = 'port-harcourt-weather.txt'
 def weatherList(filename):
 	with open(filename) as phweather:
-		dailyList = []		#Mosudi: Initialise list to collate 
-		dailyHighList = []	#Mosudi: Initialise list to collate 
-		dailyLowList = []	#Mosudi: Initialise list to collate 
-		dailyTempSpread = []	#Mosudi: Initialise list to collate 
+		dailyList = []		#Mosudi: Initialise list to collate days of the month
+		dailyHighList = []	#Mosudi: Initialise list to collate daily high temperature
+		dailyLowList = []	#Mosudi: Initialise list to collate low temperature
+		dailyTempSpread = []	#Mosudi: Initialise list to collate daily temperature spread
 		phweather.next() #Mosudi Skipping the first line
 		phweather.next() #Mosudi Skipping the second line#I will later use confirm if list empty
 		for line in phweather:  #Mosudi: Iterating over  each line
@@ -26,6 +26,6 @@ def weatherList(filename):
 	#print weatherDict
 	#print min(sorted(weatherDict.values()))
 	print "The day with the smallest temperature spread is  day: " + str(min(weatherDict, key=weatherDict.get)) + ", with temperature spread of " +  str(min(sorted(weatherDict.values())))
-
+	
 
 weatherList(filename)
