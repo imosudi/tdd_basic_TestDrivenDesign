@@ -9,8 +9,8 @@ class TddLeastGoalPerformer(unittest.TestCase):
 
 	def test__return_inputFileIntegrity(self):
 		inputFilename = LeastGoalPerformer()
-		result = inputFilename.confirmFileIntergrity('football-league-result.txt')
-		self.assertEqual('football-league-result.txt', result)
+		result = inputFilename.confirmFileIntergrity('football-league-results.txt')
+		self.assertEqual('football-league-results.txt', result)
 		pass
 
 
