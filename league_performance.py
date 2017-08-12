@@ -16,8 +16,8 @@ def leageGoalPerformance(filename):
 					teamDataList.append(leagueData) #Mosudi: 
 				except ValueError:
 					leagueClub = str(leagueData) #Mosudi: League club names
-					if leagueClub != '-': leagueClubName.append(leagueClub) #Mosudi: Append to list in bid to extract club names 
-					pass													#		while removing the lines with several "-"
+					if leagueClub != '-': leagueClubName.append(leagueClub) #Mosudi: Append to list in bid to extract club names, while removing the lines with several "-"
+					pass													
 			#print len(teamDataList)
 			if len(teamDataList) > 0 : #Mosudi: Iteration over the two lists(teamDataList and leagueClubList) while skipping empty lists create out of blank line
 				#print len(teamDataList) 
